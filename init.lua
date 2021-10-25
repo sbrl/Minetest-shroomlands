@@ -11,6 +11,7 @@ local modpath = minetest.get_modpath("silverbell_plants")
 
 
 -- TODO: Load mod files here
+dofile(modpath.."/src/defs/nodes.lua")
 
 
 print("[shroomlands] Loaded and ready")
