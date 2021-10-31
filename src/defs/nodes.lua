@@ -24,7 +24,7 @@ end
 
 local function register_mushroom_block_many(defs)
 	for i,def in ipairs(defs) do
-		register_mushroom_block(def[0], def[1], def[2])
+		register_mushroom_block(def[1], def[2], def[3])
 	end
 end
 
