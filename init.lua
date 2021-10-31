@@ -7,7 +7,7 @@
 
 shroomlands = {  }
 
-local modpath = minetest.get_modpath("silverbell_plants")
+local modpath = minetest.get_modpath("shroomlands")
 
 
 -- TODO: Load mod files here
