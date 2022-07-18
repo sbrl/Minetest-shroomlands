@@ -40,6 +40,8 @@ register_mushroom_block_many({
 	{ "mushroom_brown2", "shroomlands_brown_block.png", false },
 	{ "mushroom_purple", "shroomlands_purple_block.png", false },
 	{ "mushroom_purplespot", "shroomlands_purple_spot.png", false, 5 },
+	{ "glowspore", "shroomlands_glowspore.png", false, minetest.LIGHT_MAX },
+	-- { "glowspore_blue", "shroomlands_glowspore_blue.png", false, minetest.LIGHT_MAX },
 	{ "mushroom_purplestem", "shroomlands_purple_stem.png", true },
 	{ "mycelium", {
 		"shroomlands_grass_mushroom_top.png",
