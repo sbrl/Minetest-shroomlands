@@ -4,10 +4,10 @@
 -- @param	texture		string	The name of the texture for the new block.
 -- @param	rotateable	bool	Whether the new block should be rotateable by the user or not.
 -- @param	lumimnosity	number?	Optional. If specified, then this is the amoutn fo light that should be emitted. If not, specify nil.
-local function register_mushroom_block(name, texture, rotateable, luminosity)
+local function register_mushroom_block(desc, name, texture, rotateable, luminosity)
 	if type(texture) == "string" then texture = { texture } end
 	local def = {
-		description = "Brown Mushroom Block",
+		description = desc,
 		tiles = texture,
 		-- See https://dev.minetest.net/Groups/Custom_groups
 		groups = {
@@ -16,7 +16,7 @@ local function register_mushroom_block(name, texture, rotateable, luminosity)
 		},
 		
 		-- Events
-		-- on_place = 
+		-- on_place =
 	}
 	
 	if rotateable then
@@ -31,19 +31,19 @@ end
 local function register_mushroom_block_many(defs)
 	for i,def in ipairs(defs) do
 		print("DEBUG registering", def[1])
-		register_mushroom_block(def[1], def[2], def[3], def[4])
+		register_mushroom_block(def[1], def[2], def[3], def[4], def[5])
 	end
 end
 
 register_mushroom_block_many({
-	{ "mushroom_brown", "shroomlands_brown_block_2.png", false },
-	{ "mushroom_brown2", "shroomlands_brown_block.png", false },
-	{ "mushroom_purple", "shroomlands_purple_block.png", false },
-	{ "mushroom_purplespot", "shroomlands_purple_spot.png", false, 5 },
-	{ "glowspore", "shroomlands_glowspore.png", false, minetest.LIGHT_MAX },
-	-- { "glowspore_blue", "shroomlands_glowspore_blue.png", false, minetest.LIGHT_MAX },
-	{ "mushroom_purplestem", "shroomlands_purple_stem.png", true },
-	{ "mycelium", {
+	{ "Brown Mushroom Block", "mushroom_brown", "shroomlands_brown_block_2.png", false },
+	{ "Brown Mushroom Spore Block", "mushroom_brown2", "shroomlands_brown_block.png", false },
+	{ "Purple Mushroom Block", "mushroom_purple", "shroomlands_purple_block.png", false },
+	{ "Purple Mushroom Spore Block", "mushroom_purplespot", "shroomlands_purple_spot.png", false, 5 },
+	{ "Glowspore", "glowspore", "shroomlands_glowspore.png", false, minetest.LIGHT_MAX },
+	{ "Blue Glowspore", "glowspore_blue", "shroomlands_glowspore_blue.png", false, minetest.LIGHT_MAX },
+	{ "Purple Mushroom Stem", "mushroom_purplestem", "shroomlands_purple_stem.png", true },
+	{ "Mycelium Dirt", "mycelium", {
 		"shroomlands_grass_mushroom_top.png",
 		"shroomlands_grass_mushroom_side.png"
 	}, false },
