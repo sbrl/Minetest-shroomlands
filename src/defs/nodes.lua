@@ -37,9 +37,9 @@ end
 
 register_mushroom_block_many({
 	{ "Brown Mushroom Block", "mushroom_brown", "shroomlands_brown_block.png", false },
-	{ "Brown Mushroom Pore Block", "mushroom_brown2", "shroomlands_brown_block_2.png", false },
+	{ "Brown Mushroom Spore Block", "mushroom_brown2", "shroomlands_brown_block_2.png", false },
 	{ "Purple Mushroom Block", "mushroom_purple", "shroomlands_purple_block.png", false },
-	{ "Purple Mushroom Spot Block", "mushroom_purplespot", "shroomlands_purple_spot.png", false, 5 },
+	{ "Purple Mushroom Spore Block", "mushroom_purplespot", "shroomlands_purple_spot.png", false, 5 },
 	{ "Glowspore", "glowspore", "shroomlands_glowspore.png", false, minetest.LIGHT_MAX },
 	{ "Blue Glowspore", "glowspore_blue", "shroomlands_glowspore_blue.png", false, 7 },
 	{ "Purple Mushroom Stem", "mushroom_purplestem", {
@@ -55,13 +55,3 @@ register_mushroom_block_many({
 
 -- Ethereal mushroom blocks:
 -- (Credit: TenPlus1 for textures)
-
-register_mushroom_block_many({
-	{ "Red Mushroom Block", "mushroom_red", "shroomlands_red_block.png", false },
-	{ "Mushroom Pore Block", "mushroom_spore", "shroomlands_pore_block.png", false },
-	{ "Mushroom Stem", "mushroom_stem", {
-		"shroomlands_white_stem_top.png",
-		"shroomlands_white_stem_top.png",
-		"shroomlands_white_stem.png",
-	}, true },
-})
