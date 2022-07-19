@@ -37,7 +37,7 @@ end
 
 register_mushroom_block_many({
 	{ "Brown Mushroom Block", "mushroom_brown", "shroomlands_brown_block.png", false },
-	{ "Brown Mushroom Spore Block", "mushroom_brown2", "shroomlands_brown_block_2.png", false },
+	{ "Brown Mushroom Spot Block", "mushroom_brown2", "shroomlands_brown_block_2.png", false },
 	{ "Purple Mushroom Block", "mushroom_purple", "shroomlands_purple_block.png", false },
 	{ "Purple Mushroom Spore Block", "mushroom_purplespot", "shroomlands_purple_spot.png", false, 5 },
 	{ "Glowspore", "glowspore", "shroomlands_glowspore.png", false, minetest.LIGHT_MAX },
