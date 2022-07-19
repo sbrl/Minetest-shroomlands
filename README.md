@@ -1,6 +1,6 @@
 # shroomlands
 
-> A better mushroom island biome.
+> A better mushroom biome.
 
 After thinking about how much potential has been left untapped in the [Ethereal
 mod](https://content.minetest.net/packages/TenPlus1/ethereal/)'s mushroom island biome, this project was born.
